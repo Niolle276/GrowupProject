@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow up - contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Grow Up">
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section> 
+            <div class="container">
+                <h1>Orçamento</h1>
+
+        <div class="contato">
+            <form method ="POST">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email"> E-mail</label>
+                <input type="email" id="email" nome="email" required>
+                
+                <label for="mensagem">Descrição </label>
+                <textarea name="mensagem" id="mensagem" cols="10" rows="10" required> </textarea> 
+
+                <p class = "urgente">Assunto Urgente? </p>
+
+                <input class = "urgencia" type="radio" name="urgencia" id="assunt-urgencia" value="urgencia">
+                <label for="assunto_urgencia">Sim</label>
+                <input class = "urgencia" type="radio" name="urgencia" id="assunt-urgencia" value="urgencia">
+                <label for="assunto_elogio">Não</label>
+                
+                <label for="data_entrega"> Data de Entrega</label>
+                <input type="date" name="data_entrega" id="data_entrega">
+
+
+                <p class = "servicos">Serviços</p> <br>
+
+                <input type="checkbox" name="desenvolvimento" id="assunt-desenvolvimento" value="desenvolvimento">
+                <label for="assunto_elogio">Desenvolvimento Web </label>
+               
+                <input type="checkbox" name="marketing" id="assunt-marketing" value="marketing">
+                <label for="assunto_elogio">Marketing Digital </label>
+
+                <input type="checkbox" name="consultoria" id="assunt-consultoria" value="consultoria">
+                <label for="assunto_elogio">Consultoria UX </label> <br>
+
+                <label for="anexos">Anexos</label>
+                <input type="file" name="anexos" id="anexos">
+
+                <label for="publico_alvo"> Qual é o público alvo do seu projeto? </label>
+                <input type="text" name="publico_id" id="publico_alvo">
+
+
+                <label for="forma_pagamento"> Forma de pagamento</label>
+                <select name="forma_pagamento" id="forma_pagamento" required>
+                <option selected disabled> Selecione uma opção</option>
+                    <option value="Débito"> Débito </option>
+                <option value="Crédito">  Crédito </option>
+                <option value="Transerencia bancária"> Transferência Bancária</option>
+                <option value="Boleto">Boleto</option>
+                </select>
+
+                <label for="origem_cliente"> Como conheceu a Grow up? </label>
+                <select name="origem_cliente" id="origem_cliente" required> 
+                
+                <option selected disabled> Selecione uma opção</option>
+                <option value="Facebook"> Facebook </option>
+                <option value="Instagram"> Instagram </option>
+                <option value="Linkedin"> Linkedin </option>
+                <option value="Google"> Google </option>
+            </select>
+            <br>
+               <button type="submit">Enviar</button>
+           </form>
+        <div class="info">
+            <p> Email: <a href="mailto:contato@growup.com"> contato@growup.com</a></p>
+            <p> Telefone: 
+            <a href="tel:1198984242"> (11) 9898-4242 </a> 
+            <a href="https://api.whatsapp.com/send?phone=551198984242&text=Gostaria%20de%20receber%20um%20or%C3%A7amento%3F" 
+            target="_blank">(whatsApp)</a>
+            </p>
+        </div>
+        </div>
+    </div>
+        </section>
+    </main>
+   
+    <footer>
+    <p>copyright - Grow Up </p>
+    </footer>
+
+</body>
+
+</html>
